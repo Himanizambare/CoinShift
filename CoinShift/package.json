@@ -1,13 +1,12 @@
 {
   "name": "coinshift",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "description": "An npm package to convert currency",
   "main": "index.js",
   "scripts": {
     "test": "npm run test"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Himanizambare/CoinShift.git"
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/Himanizambare/CoinShift#readme",
   "dependencies": {
-    "@everapi/freecurrencyapi-js": "^1.0.1"
+    "@everapi/freecurrencyapi-js": "^1.0.1",
+    "dotenv": "^16.4.5"
   }
 }

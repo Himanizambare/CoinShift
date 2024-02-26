@@ -1,5 +1,9 @@
 import Freecurrencyapi from '@everapi/freecurrencyapi-js';
-const freecurrencyapi = new Freecurrencyapi('fca_live_QAPZ00e3t3S7WI3XaV0qnilzoyZNomsHSHmcMOwf');
+import { configDotenv } from 'dotenv';
+
+configDotenv();
+
+const freecurrencyapi = new Freecurrencyapi(process.env.FREECURRENCYAPI_API_KEY);
 
 
 export async function convertCurrency(fromcurrency,tocurrency,units){
